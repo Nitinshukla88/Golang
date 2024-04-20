@@ -27,23 +27,25 @@ func main() {
 
 	// Taking the example of slice..
 
-	// slice := []int{2, 23, 43, 45}
+	slice := []int{2, 23, 43, 45}
 
-	// modify1(slice)
+	// Note: If we call slice with its size given, it becomes array and you'll see no modification as arrays in golang are passed by value.
 
-	// fmt.Println(slice)
+	modify1(slice)
+
+	fmt.Println(slice)
 
 	// Taking the example of maps in Golang..
 
-	sample := make(map[string]int)
+	// sample := make(map[string]int)
 
-	sample["Rajan"] = 11
+	// sample["Rajan"] = 11
 
-	sample["Nitin"] = 56
+	// sample["Nitin"] = 56
 
-	modify2(sample)
+	// modify2(sample)
 
-	fmt.Println(sample)
+	// fmt.Println(sample)
 
 	// Here in all the cases excluding the string change where we passed the address of variable, we have used the concept of pass by reference.
 }
